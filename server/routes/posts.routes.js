@@ -4,10 +4,10 @@ import { getPosts, createPost, updatePosts, deletePosts,  getPost } from "../con
 const router = Router();
 
 router.get("/posts", getPosts);
-
+router.get("/posts/:id", getPost);
 router.post("/posts", createPost);
 router.put("/posts/:id", updatePosts);
 router.delete("/posts/:id", deletePosts);
-router.get("/posts/:id", getPost);
+
 
 export default router;
